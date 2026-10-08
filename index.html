@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SB.se – Kläder online</title>
+<style>
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:#111;background:#fff}button,input,select{font:inherit}button{cursor:pointer}.top{background:#111;color:#fff;text-align:center;padding:9px;font-size:12px}.header{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid #ddd}.nav{max-width:1200px;height:70px;margin:auto;padding:0 18px;display:flex;align-items:center;gap:24px}.logo{font:bold 38px Georgia,serif;letter-spacing:-3px}.logo span{font:700 10px Arial;letter-spacing:1px}.links{display:flex;gap:20px;flex:1}.links a,.mobile a{color:#111;text-decoration:none;font-weight:700}.tools{display:flex;gap:4px}.icon{border:0;background:#fff;font-size:22px;width:42px;height:42px;border-radius:50%}.menu{display:none;border:0;background:#fff;font-size:27px}.badge{display:inline-grid;place-items:center;width:18px;height:18px;border-radius:50%;background:#111;color:#fff;font-size:10px;margin-left:-8px;vertical-align:top}.mobile{display:none;border-top:1px solid #ddd;padding:8px 18px}.mobile.open{display:block}.mobile a{display:block;padding:14px 0;border-bottom:1px solid #eee}.search{display:none;max-width:1200px;margin:auto;padding:10px 18px}.search.open{display:block}.search input{width:100%;padding:13px;border:1px solid #aaa}.hero{background:#f2f2f2}.hero-in{max-width:1200px;margin:auto;padding:60px 18px;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}.kicker{font-size:12px;font-weight:800;letter-spacing:2px}.hero h1{font:900 clamp(48px,7vw,78px)/.9 Georgia,serif;margin:16px 0}.hero p{color:#555;line-height:1.6;font-size:17px;max-width:550px}.cta{display:inline-block;background:#111;color:#fff;text-decoration:none;font-weight:800;padding:14px 22px}.hero-img{width:100%;border-radius:10px;background:#ddd}.section{max-width:1200px;margin:auto;padding:55px 18px}.head{display:flex;justify-content:space-between;align-items:end;margin-bottom:22px}.head h2{font:900 38px Georgia,serif;margin:0}.filters{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px}.filter{border:1px solid #bbb;background:#fff;padding:10px 14px;border-radius:22px}.filter.active{background:#111;color:#fff;border-color:#111}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.card{min-width:0}.photo{position:relative;background:#f4f4f4}.photo img{width:100%;display:block;aspect-ratio:4/5;object-fit:cover}.sale{position:absolute;left:10px;top:10px;background:#e9e2d6;padding:7px 9px;font-size:12px;font-weight:700}.heart{position:absolute;right:10px;top:10px;border:0;background:#fff;border-radius:50%;width:38px;height:38px;font-size:20px}.info{padding:12px 2px}.brand{font-size:19px;font-weight:800}.name{font-size:14px;line-height:1.4;min-height:40px;margin-top:5px}.price{font-size:19px;font-weight:800;margin-top:10px}.old{color:#999;text-decoration:line-through;font-size:13px;font-weight:400;margin-left:6px}.add{width:100%;border:0;background:#111;color:#fff;padding:13px;margin-top:11px;font-weight:800}.info-block{background:#f6f6f6;padding:28px;line-height:1.6}.info-block h3{margin-top:0}footer{background:#111;color:#bbb}.foot{max-width:1200px;margin:auto;padding:40px 18px;display:grid;grid-template-columns:2fr 1fr 1fr;gap:25px}footer h3{color:#fff}footer a{display:block;color:#bbb;text-decoration:none;margin:9px 0}.drawer{display:none;position:fixed;inset:0;z-index:50}.drawer.open{display:block}.overlay{position:absolute;inset:0;background:rgba(0,0,0,.5)}.panel{position:absolute;right:0;top:0;height:100%;width:min(460px,100%);background:#fff;padding:22px;overflow:auto}.close{float:right;border:0;background:#fff;font-size:30px}.panel h2{font:900 32px Georgia,serif}.item{display:grid;grid-template-columns:70px 1fr auto;gap:10px;padding:13px 0;border-bottom:1px solid #ddd;align-items:center}.item img{width:70px;height:88px;object-fit:cover}.qty{display:flex;gap:8px;align-items:center;margin-top:7px}.qty button{width:28px;height:28px;border:1px solid #bbb;background:#fff}.total{display:flex;justify-content:space-between;font-size:20px;font-weight:800;padding:18px 0}.checkout{width:100%;border:0;background:#111;color:#fff;padding:14px;font-weight:800}.form{display:grid;gap:9px;margin-top:15px}.form input,.form select{padding:12px;border:1px solid #aaa}.empty{color:#777;padding:20px 0}.toast{position:fixed;left:50%;bottom:22px;transform:translateX(-50%);background:#111;color:#fff;padding:12px 17px;border-radius:5px;display:none;z-index:100}.toast.show{display:block}
+@media(max-width:800px){.links{display:none}.menu{display:block}.grid{grid-template-columns:1fr 1fr}.hero-in{grid-template-columns:1fr}.foot{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.nav{height:62px;padding:0 12px;gap:7px}.logo{font-size:34px;margin-right:auto}.icon{width:37px;font-size:20px}.grid{grid-template-columns:1fr}.foot{grid-template-columns:1fr}.section{padding:45px 14px}.hero-in{padding:45px 14px}}
+</style>
+</head>
+<body>
+<div class="top">FRI FRAKT ÖVER 799 KR · NYA DEALS VARJE VECKA</div>
+<header class="header">
+  <div class="nav">
+    <button class="menu" id="menuBtn" aria-label="Öppna meny">☰</button>
+    <div class="logo">SB<span>.SE</span></div>
+    <nav class="links"><a href="#hem">Hem</a><a href="#shop">Shoppa</a><a href="#herr">Herr</a><a href="#dam">Dam</a><a href="#kontakt">Kontakt</a></nav>
+    <div class="tools"><button class="icon" id="searchBtn" aria-label="Sök">⌕</button><button class="icon" id="cartBtn" aria-label="Varukorg">🛍️<span class="badge" id="count">0</span></button></div>
+  </div>
+  <div class="mobile" id="mobileMenu"><a href="#hem">Hem</a><a href="#shop">Shoppa</a><a href="#herr">Herr</a><a href="#dam">Dam</a><a href="#kontakt">Kontakt</a></div>
+  <div class="search" id="search"><input id="searchInput" placeholder="Sök efter märke eller produkt..."></div>
+</header>
+<section class="hero" id="hem"><div class="hero-in"><div><div class="kicker">SB.SE · ONLINEBUTIK</div><h1>Stil som<br>passar dig.</h1><p>Upptäck utvalda tröjor, stickat och sweatshirts. Lägg produkter i varukorgen och testa hela flödet.</p><a class="cta" href="#shop">SHOPPA NU</a></div><img class="hero-img" src="lyle_scott.png" alt="Lyle & Scott tröja"></div></section>
+<section class="section" id="shop"><div class="head"><h2>Shoppa</h2><span id="result"></span></div><div class="filters"><button class="filter active" data-filter="Alla">Alla</button><button class="filter" data-filter="Herr">Herr</button><button class="filter" data-filter="Dam">Dam</button><button class="filter" data-filter="Tröjor">Tröjor</button><button class="filter" data-filter="Stickat">Stickat</button><button class="filter" data-filter="Sweatshirts">Sweatshirts</button></div><div class="grid" id="grid"></div></section>
+<section class="section" id="herr"><div class="info-block"><h3>Herr</h3><p>Se våra tröjor och sweatshirts för herr. Använd filtret ovan för att visa herrprodukter.</p><button class="filter" data-filter="Herr">VISA HERR</button></div></section>
+<section class="section" id="dam"><div class="info-block"><h3>Dam</h3><p>Damkollektionen kan fyllas på med fler produkter när du har fler produktbilder.</p><button class="filter" data-filter="Dam">VISA DAM</button></div></section>
+<section class="section" id="kontakt"><div class="info-block"><h3>Kontakt</h3><p>SB.se kundservice<br>E-post: kundservice@sb.se</p></div></section>
+<footer><div class="foot"><div><h3>SB.se</h3><p>En enkel demo-webbshop för kläder.</p></div><div><h3>Shop</h3><a href="#shop">Alla produkter</a><a href="#herr">Herr</a><a href="#dam">Dam</a></div><div><h3>Hjälp</h3><a href="#kontakt">Kontakt</a><a href="#shop">Leverans</a><a href="#shop">Retur</a></div></div></footer>
+<div class="drawer" id="drawer"><div class="overlay" id="overlay"></div><aside class="panel"><button class="close" id="closeCart">×</button><h2>Din varukorg</h2><div id="empty" class="empty">Varukorgen är tom.</div><div id="items"></div><div class="total"><span>Totalt</span><span id="total">0 kr</span></div><button class="checkout" id="checkoutBtn">TILL KASSAN</button><div id="checkoutBox" style="display:none"><div class="form"><input id="customerName" placeholder="Namn"><input id="customerEmail" type="email" placeholder="E-post"><input id="customerAddress" placeholder="Adress"><input id="customerCity" placeholder="Ort"><select id="payment"><option>Kort (demo)</option><option>Faktura (demo)</option></select><button class="checkout" id="orderBtn">SKAPA DEMO-BESTÄLLNING</button></div></div></aside></div>
+<div class="toast" id="toast"></div>
+<script>
+const products=[
+{id:1,brand:'Lyle & Scott',name:'Loopback Quarter Zip Sweat – Beige',price:499,old:999,discount:'50% rabatt',image:'lyle_scott.png',gender:'Herr',category:'Sweatshirts'},
+{id:2,brand:'Polo Ralph Lauren',name:'Dubbelstickad tröja, kort dragkedja – Svart',price:399,old:799,discount:'50% rabatt',image:'polo.png',gender:'Herr',category:'Tröjor'},
+{id:3,brand:'Jack & Jones',name:'JCOLEGACY Knit Jacquard Crew Neck – Beige',price:299.97,old:499.95,discount:'40% rabatt',image:'jack_jones.png',gender:'Herr',category:'Stickat'},
+{id:4,brand:'Lyle & Scott',name:'Loopback Quarter Zip Sweat – Klassisk',price:499,old:999,discount:'50% rabatt',image:'lyle_scott.png',gender:'Herr',category:'Sweatshirts'},
+{id:5,brand:'Polo Ralph Lauren',name:'Half Zip Tröja – Premium',price:449,old:899,discount:'50% rabatt',image:'polo.png',gender:'Herr',category:'Tröjor'},
+{id:6,brand:'Jack & Jones',name:'Legacy Knit Crew Neck – Sand',price:299.97,old:499.95,discount:'40% rabatt',image:'jack_jones.png',gender:'Herr',category:'Stickat'},
+{id:7,brand:'Lyle & Scott',name:'Quarter Zip Sweat – Everyday',price:429,old:799,discount:'46% rabatt',image:'lyle_scott.png',gender:'Herr',category:'Sweatshirts'},
+{id:8,brand:'Polo Ralph Lauren',name:'Dubbelstickad Half Zip – Black',price:449,old:899,discount:'50% rabatt',image:'polo.png',gender:'Herr',category:'Tröjor'},
+{id:9,brand:'Jack & Jones',name:'JCOLEGACY Knit – Essential',price:279,old:449,discount:'38% rabatt',image:'jack_jones.png',gender:'Herr',category:'Stickat'},
+{id:10,brand:'SB Studio',name:'Essential Knit – Sand',price:329,old:499,discount:'34% rabatt',image:'jack_jones.png',gender:'Dam',category:'Stickat'},
+{id:11,brand:'SB Studio',name:'Soft Half Zip – Beige',price:379,old:599,discount:'37% rabatt',image:'lyle_scott.png',gender:'Dam',category:'Tröjor'}
+];
+let cart=JSON.parse(localStorage.getItem('sb_cart')||'[]');
+let activeFilter='Alla';
+const money=n=>new Intl.NumberFormat('sv-SE',{style:'currency',currency:'SEK',minimumFractionDigits:2}).format(n).replace(',00','');
+const $=id=>document.getElementById(id);
+function visibleProducts(){const q=($('searchInput').value||'').trim().toLowerCase();return products.filter(p=>(activeFilter==='Alla'||p.gender===activeFilter||p.category===activeFilter)&&((p.brand+' '+p.name).toLowerCase().includes(q)));}
+function renderProducts(){const list=visibleProducts();$('result').textContent=list.length+' produkter';$('grid').innerHTML=list.map(p=>`<article class="card"><div class="photo"><span class="sale">${p.discount}</span><button class="heart" data-fav="${p.id}">♡</button><img src="${p.image}" alt="${p.brand} ${p.name}"></div><div class="info"><div class="brand">${p.brand}</div><div class="name">${p.name}</div><div class="price">${money(p.price)} <span class="old">${money(p.old)}</span></div><button class="add" data-add="${p.id}">LÄGG I VARUKORG</button></div></article>`).join('');}
+function saveCart(){localStorage.setItem('sb_cart',JSON.stringify(cart));renderCart();}
+function renderCart(){const amount=cart.reduce((s,x)=>s+x.qty,0);$('count').textContent=amount;const full=cart.map(x=>({x,p:products.find(p=>p.id===x.id)})).filter(v=>v.p);$('empty').style.display=full.length?'none':'block';$('items').innerHTML=full.map(v=>`<div class="item"><img src="${v.p.image}" alt=""><div><b>${v.p.brand}</b><br><small>${v.p.name}</small><div class="qty"><button data-qty="${v.p.id}" data-d="-1">−</button>${v.x.qty}<button data-qty="${v.p.id}" data-d="1">+</button></div></div><b>${money(v.p.price*v.x.qty)}</b></div>`).join('');$('total').textContent=money(full.reduce((s,v)=>s+v.p.price*v.x.qty,0));}
+function openCart(){$('drawer').classList.add('open');renderCart();}
+function closeCart(){$('drawer').classList.remove('open');}
+function toast(msg){$('toast').textContent=msg;$('toast').classList.add('show');setTimeout(()=>$('toast').classList.remove('show'),1400);}
+$('menuBtn').addEventListener('click',()=>{$('mobileMenu').classList.toggle('open')});
+$('searchBtn').addEventListener('click',()=>{$('search').classList.toggle('open');if($('search').classList.contains('open'))$('searchInput').focus()});
+$('cartBtn').addEventListener('click',openCart);$('closeCart').addEventListener('click',closeCart);$('overlay').addEventListener('click',closeCart);
+$('searchInput').addEventListener('input',renderProducts);
+document.addEventListener('click',e=>{
+ const link=e.target.closest('.mobile a');if(link)$('mobileMenu').classList.remove('open');
+ const filter=e.target.closest('[data-filter]');if(filter){activeFilter=filter.dataset.filter;document.querySelectorAll('[data-filter]').forEach(b=>b.classList.toggle('active',b.dataset.filter===activeFilter));renderProducts();}
+ const add=e.target.closest('[data-add]');if(add){const id=Number(add.dataset.add),x=cart.find(v=>v.id===id);if(x)x.qty++;else cart.push({id,qty:1});saveCart();openCart();toast('Produkten lades i varukorgen');}
+ const fav=e.target.closest('[data-fav]');if(fav){fav.textContent=fav.textContent==='♡'?'♥':'♡';toast('Favorit uppdaterad');}
+ const qty=e.target.closest('[data-qty]');if(qty){const id=Number(qty.dataset.qty),d=Number(qty.dataset.d),x=cart.find(v=>v.id===id);if(x){x.qty+=d;if(x.qty<=0)cart=cart.filter(v=>v.id!==id);saveCart();}}
+});
+$('checkoutBtn').addEventListener('click',()=>{if(!cart.length){toast('Varukorgen är tom');return}$('checkoutBox').style.display='block';$('checkoutBtn').style.display='none';});
+$('orderBtn').addEventListener('click',()=>{if(!$('customerName').value.trim()||!$('customerEmail').value.trim()){alert('Fyll i namn och e-post.');return}alert('Demo-beställning skapad! Riktig betalning är inte inkopplad.');cart=[];saveCart();closeCart();$('checkoutBox').style.display='none';$('checkoutBtn').style.display='block';});
+renderProducts();renderCart();
+</script>
+</body>
+</html>
